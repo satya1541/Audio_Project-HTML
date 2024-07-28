@@ -9,13 +9,19 @@ body {
 }
 
 .audio-player {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     animation: fadeIn 1s ease-in-out;
     position: relative;
+    background-image: url('your-background-image.jpg'); /* Ensure you have the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the image does not repeat */
+    width: 100%; /* Make sure the width covers the container */
+    height: 100%; /* Make sure the height covers the container */
 }
 
 .controls {
@@ -64,27 +70,4 @@ body {
         opacity: 1;
         transform: scale(1);
     }
-}
-
-.audio-player {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
-    position: relative;
-    background-image: url('your-background-image.jpg'); /* Add your background image here */
-    background-size: cover;
-    background-position: center;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(45deg, #1e3c72, #2a5298);
-    margin: 0;
 }
